@@ -1,7 +1,7 @@
 :root {
-    --bg: #dcdfe1;
+    --bg: #f8fafc;
     --primary: #0f172a;
-    --secondary: #334155;
+    --secondary: #475569;
     --accent: #2563eb;
     --border: #e2e8f0;
 }
@@ -10,28 +10,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     background: var(--bg);
     color: var(--primary);
     line-height: 1.6;
 }
 
+/* Container */
 .container {
-    width: 100%;
-    max-width: 1100px;
+    width: 90%;
+    max-width: 1000px;
     margin: auto;
-    height: 10%;
 }
 
-/* Styles for Navbar*/
+/* NAVBAR */
 nav {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: white;
+    background: #ffffff;
     border-bottom: 1px solid var(--border);
+    z-index: 1000;
 }
 
 .nav-content {
@@ -41,39 +44,92 @@ nav {
     padding: 1rem 0;
 }
 
-.logo a{
+.logo a {
     font-weight: 700;
-    font-size: 25px;
-    margin: 14px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--primary);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 0.01rem;
-    align-items: center;
+    gap: 2rem;
 }
 
 nav a {
     text-decoration: none;
     color: var(--secondary);
-    font-size: 0.9rem;
-    transition: 0.3s;
-    margin: 14px;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: var(--accent);
 }
 
-.resume-btn {
-    border: 1px solid var(--accent);
-    padding: 0.4rem 1rem;
-    border-radius: 8px;
-    color: var(--accent);
+/* SECTIONS */
+section {
+    padding: 100px 0;
 }
 
-.resume-btn:hover {
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero p.intro {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--secondary);
+    max-width: 600px;
+}
+
+/* BUTTONS */
+.sec-btn {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.sec-btn a {
+    text-decoration: none;
+    border: 1px solid var(--accent);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    color: var(--accent);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sec-btn a:hover {
     background: var(--accent);
     color: white;
+    cursor: pointer;
+}
+
+/* Highlight name */
+.highlight {
+    color: var(--accent);
+    font-weight: 700;
 }
