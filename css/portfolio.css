@@ -1,9 +1,11 @@
 :root {
-    --bg: #f8fafc;
+    --bg: #f0f0f0; 
+    /* #f8fafc; */
     --primary: #0f172a;
     --secondary: #475569;
     --accent: #2563eb;
-    --border: #e2e8f0;
+    --border: #dcdcdc;
+    --card: #ffffff;
 }
 
 * {
@@ -133,4 +135,32 @@ p {
 .highlight {
     color: var(--accent);
     font-weight: 700;
+}
+
+/* About */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.about-text {
+    flex: 1;
+}
+.skills-grid {
+    margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: 0.3s; 
+}
+.card:hover {
+    transform: translateY(-6px);
 }
