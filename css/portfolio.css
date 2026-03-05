@@ -78,6 +78,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    border-bottom: 1.54px solid var(--border);
 }
 
 .hero p.intro {
