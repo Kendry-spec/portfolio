@@ -146,6 +146,11 @@ p {
 .about-text {
     flex: 1;
 }
+
+.skills {
+    margin-top: 1.5rem;
+}
+
 .skills-grid {
     margin-top: 2rem;
 
