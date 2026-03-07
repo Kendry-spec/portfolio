@@ -112,7 +112,7 @@ h3 {
 
 p {
     color: var(--secondary);
-    max-width: 100%;
+    max-width: none;
 }
 
 /* Buttons */
@@ -150,6 +150,7 @@ p {
     flex-wrap: wrap;
     gap: 3rem;
 }
+
 .about-text {
     flex: 1;
 }
@@ -160,7 +161,6 @@ p {
 
 .skills-grid {
     margin-top: 2rem;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
@@ -171,11 +171,18 @@ p {
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid var(--border);
-    transition: 0.3s; 
+    transition: transform 0.25s ease, box-shadow 0.25s ease; 
 }
+
+.card p {
+    margin-bottom: 0.8rem;
+}
+
 .card:hover {
     transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
+
 /* Experience & Projects */
 .grid {
     display: grid;
