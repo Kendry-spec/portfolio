@@ -1,6 +1,5 @@
 :root {
     --bg: #f0f0f0; 
-    /* #f8fafc; */
     --primary: #0f172a;
     --secondary: #475569;
     --accent: #2563eb;
@@ -168,4 +167,14 @@ p {
 }
 .card:hover {
     transform: translateY(-6px);
+}
+/* Experience & Projects */
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.tech {
+    color: #0EA5E9;
+    font-weight: 500;
 }
