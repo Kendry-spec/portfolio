@@ -104,10 +104,10 @@ h3 {
 
 p {
     color: var(--secondary);
-    max-width: 600px;
+    max-width: 100%;
 }
 
-/* BUTTONS */
+/* Buttons */
 .sec-btn {
     display: flex;
     gap: 1rem;
