@@ -11,6 +11,7 @@ I built this portfolio to present my work, share what I’m learning, and contin
 
 - HTML
 - CSS
+- JavaScript
 
 ## Features
 
