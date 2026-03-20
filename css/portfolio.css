@@ -301,6 +301,28 @@ button:hover {
   background: #1d4ed8;
 }
 
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+input.error-border, textarea.error-boder {
+  border: 1px solid red;
+}
+
+#form-status {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: green;
+}
+
+.fail {
+  color: red;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .contact-grid {
