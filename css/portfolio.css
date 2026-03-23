@@ -243,18 +243,90 @@ p {
 }
 
 .info-item {
-  margin: 15px 0;
+  display: flex;
+  align-items: flex-start;
+  gap:15px;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.info-item i {
+  font-size: 1.5rem;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 10px;
+  border-radius: 6px; 
+  min-width: 40px;
+  text-align: center;
+}
+
+.info-item strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.info-item p {
+  margin: 2px 0 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.info-item a {
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: var(--accent);
 }
 
 .social-links {
-  margin-top: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .social-links a {
-  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
-  color: #2563eb;
+  color: #334155;
   font-weight: 500;
+  transition: 0.3s;
+}
+
+.social-links a i {
+  font-size: 2rem;
+}
+
+.social-btn.linkedin {
+  color: var(--accent);
+}
+
+.social-btn.github {
+  background: #080707;
+  color: white;
+  border-radius: 50px;
+}
+
+.social-btn.facebook {
+  color: var(--accent);
+}
+.social-btn.instagram {
+  color: #8134af;
+}
+
+.social-links a:hover {
+  transform: translateY(-6px);
 }
 
 /* Contact form */
@@ -306,7 +378,7 @@ button:hover {
   font-size: 0.8rem;
 }
 
-input.error-border, textarea.error-boder {
+input.error-border, textarea.error-border {
   border: 1px solid red;
 }
 
