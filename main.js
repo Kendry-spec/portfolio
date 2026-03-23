@@ -89,7 +89,7 @@ if (form) {
     btn.innerText = "Sending...";
     btn.disabled = true;
 
-    // SEND EMAIL (EmailJS)
+    // SEND EMAIL
     emailjs.sendForm(
       "service_n5qcubs",
       "template_q5hjsk9",
