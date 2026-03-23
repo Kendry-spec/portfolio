@@ -140,50 +140,62 @@
             </div>
         </section>
 
-       <section id="contact" class="contact-section">
+        <section id="contact" class="contact-section">
             <div class="container">
                 <div class="contact-header">
                     <p class="subtitle">Get In Touch</p>
                     <h2>Contact Me</h2>
                     <p class="desc">
-                        Have a project in mind or need technical assistance? 
+                        Have a project in mind or need technical assistance?
                         Let's discuss how I can help you achieve your goals.
                     </p>
                 </div>
 
+                <!-- CONTACT INFORMATION -->
                 <div class="contact-grid">
-                    <!-- Contact Information -->
                     <div class="contact-info">
                         <h3>Contact Information</h3>
-                        <i class="fas fa-envelope"></i>
+                        <!-- EMAIL ADDRESS-->
                         <div class="info-item">
-                            <strong>Email</strong>
-                            <p><a href="mailto:hend.kayira@gmail.com">hend.kayira@gmail.com</a></p>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p><a href="mailto:hend.kayira@gmail.com">hend.kayira@gmail.com</a></p>
+                            </div>
                         </div>
 
+                        <!-- PHONE NUMBER -->
                         <div class="info-item">
-                            <strong>Phone</strong>
-                            <p><a href="tel:+265999140016">+265 999 140 016</a></p>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p><a href="tel:+265999140016">+265 999 140 016</a></p>
+                            </div>
                         </div>
 
+                        <!-- PHYSICAL LOCATION ADDRESS-->
                         <div class="info-item">
-                            <strong>Location</strong>
-                            <p>Lilongwe, Malawi</p>
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <strong>Location</strong>
+                                <p>Lilongwe, Malawi</p>
+                            </div>
                         </div>
-                        
-                       <!-- Social media Links -->
+
+                        <!-- Social media Links -->
                         <div class="social-links">
-                            <a href="www.linkedin.com/in/hendrix-kayira" class="social-btn linkedin" target="_blank">
+                            <a href="https://www.linkedin.com/in/hendrix-kayira" class="social-btn linkedin" target="_blank">
                                 <i class="fab fa-linkedin"></i>
                             </a>
-                           <a href="https://github.com/Kendry-spec" class="social-btn github" target="_blank">
+                            <a href="https://github.com/Kendry-spec" class="social-btn github" target="_blank">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="social-btn facebook" target="_blank">
+                            <a href="https://web.facebook.com/profile.php?id=100088518614589"
+                                class="social-btn facebook" target="_blank">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            <a href="#" class="social-btn instagram" target="_blank">
-                                <i class="fab fa-instagram" style="color: #8134af"></i>
+                            <a href="https://www.instagram.com/kend.ry7801?igsh=Z2tiMWxrOHpyYmx3" class="social-btn instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -193,7 +205,7 @@
                         <h3>Send a Message</h3>
                         <form id="contact-form" novalidate>
                             <div class="form-row">
-                                
+
                                 <div class="form-group">
                                     <label>Your Name</label>
                                     <input type="text" name="user_name" id="name" placeholder="Add your name" required>
@@ -202,20 +214,22 @@
 
                                 <div class="form-group">
                                     <label>Your Email</label>
-                                    <input type="email" name="user_email" id="email" placeholder="your-name@example.com" required>
+                                    <input type="email" name="user_email" id="email" placeholder="your-name@example.com"
+                                        required>
                                     <small class="error"></small>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <label>Subject</label>
-                                <input type="text" name="subject" id="subject"  placeholder="Project Inquiry">
+                                <input type="text" name="subject" id="subject" placeholder="Project Inquiry">
                                 <small class="error"></small>
                             </div>
 
                             <div class="form-group">
                                 <label>Message</label>
-                                <textarea name="message" id="message" placeholder="Tell me about your project..."></textarea>
+                                <textarea name="message" id="message"
+                                    placeholder="Tell me about your project..."></textarea>
                                 <small class="error"></small>
                             </div>
 
@@ -226,18 +240,17 @@
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
     </main>
 
     <footer></footer>
 
     <script src="main.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    
+
     <script type="text/javascript">
-        (function(){
+        (function () {
             emailjs.init({
                 publicKey: "ikjxdiWRqlRnLHO7s",
             });
